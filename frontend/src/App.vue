@@ -1,9 +1,6 @@
 <template>
 	<router-view>
 	</router-view>
-	<div class="not-mobile">
-		not mobile
-	</div>
 </template>
 <style lang="scss" src="@/assets/scss/app.scss">
 </style>
