@@ -1,0 +1,25 @@
+@import "@/assets/scss/variables";
+
+.navbar {
+    position: relative;
+    
+	.city {
+		background: #f00;
+		width: 30%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.menu {
+		display: flex;
+        justify-content: space-between;
+
+        .menu-button {
+            display: inline-block;
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            margin: 0 2vw;
+            background: #f00; //тут аватарка буит
+        }
+	}
+}
