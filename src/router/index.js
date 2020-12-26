@@ -20,6 +20,8 @@ const routes = [
 	{
 		path: '/choose-seat',
 		component: ChooseSeat,
+	},
+	{
 		path: '/check-in',
 		component: CheckIn,
 	},
