@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0;
 }
 .switch {
     position: relative;
@@ -45,7 +46,7 @@
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: $color_accent;
   }
   
   input:focus + .slider {
