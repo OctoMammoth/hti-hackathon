@@ -30,4 +30,13 @@
 	&.flex:last-child{
 		margin-left: 10px;
 	}
+	&.plane{
+		flex: 1;
+	}
+}
+.button.plane span{
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
