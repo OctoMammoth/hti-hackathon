@@ -1,19 +1,28 @@
 <template>
 	<div class="search-ticket">
-		<navbar text="Регистрация на рейс"/>
+		<navbar text="Вы летите над"/>
 		<!-- другое событие, список https://ru.vuejs.org/v2/guide/events.html -->
 		<div class="text-field">
-			<input placeholder="Фамилия"> 
-			<!-- v-model это как бы value -->
-			<input placeholder="№Брони/Билета"> 
-			<!-- реактивное значение placeholder -->
+			<div class="imageFrame">
+				<img src="@/assets/images/altai.png" alt=""/>
+				<p>Золотые горы Алтая</p>
+			</div>
+		<p>Величественные горы Алтая — сложная система высочайших в Сибири хребтов, разделённых живоп
+исными долинами рек и глубокими котловинами. Красивейшие вершины влекут путешественников и учёных, фотографов и паломников, многие горы — местные святыни.</p>
+		<div class="flex">
+			<v-button type="active plane">
+				<div>Иркутск</div>
+				<img src="@/assets/images/plane.png" alt=""/>
+				<div>Алтай</div>
+			</v-button>
 		</div>
 		<div class="flex">
-		<router-link style="display:flex;text-decoration:none" to="/map">
-			<v-button style="flex:1" type="active">
-				Найти
+			<v-button type="active plane">
+				<div>Алтай</div>
+				<img src="@/assets/images/plane.png" alt=""/>
+				<div>Якутск</div>
 			</v-button>
-		</router-link>
+		</div>
 		</div>
 	</div>
 </template>

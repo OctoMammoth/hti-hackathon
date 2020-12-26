@@ -6,6 +6,7 @@ import Watch from '@/views/watch'
 import SearchTicket from '@/views/search-ticket'
 import ChooseSeat from '@/views/choose-seat'
 import CheckIn from '@/views/check-in'
+import map from '@/views/map'
 
 import NotFound from "@/views/notfound"
 
@@ -29,6 +30,10 @@ const routes = [
 	{
 		path: '/watch',
 		component: Watch,
+	},
+	{
+		path: '/map',
+		component: map,
 	},
 	{
 		path: '/signin',
