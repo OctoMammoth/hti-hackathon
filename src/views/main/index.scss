@@ -1,0 +1,22 @@
+.skeleton {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.ticket {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.activities {
+    text-align: center;
+    .top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom {
+        display: inline-block;
+    }
+}

@@ -1,6 +1,11 @@
 <template>
 	<div class="story">
-		{{ story.text }}
+		<div class="story-image">
+			<img src="@/assets/images/covid.png"/>
+		</div>
+		<div class="story-text">
+			{{ story.text }}
+		</div>
 	</div>
 </template>
 

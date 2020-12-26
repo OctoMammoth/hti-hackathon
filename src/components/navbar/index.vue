@@ -1,11 +1,28 @@
 <template>
 <div class="navbar">
-	<div class="city">
-		Якутск
+	<div class="flex">
+		<div class="city">
+			{{ text }}
+		</div>
+		<div class="notifications">
+			aa
+		</div>
 	</div>
 	<div class="menu">
-		<div class="menu-button profile">
-			Профиль
+		<div class="flex">
+			<div class="profile">
+				<div class="menu-button">
+					<img src="@/assets/images/avatar.webp"/>
+				</div>
+				<div>
+					<h5>
+						Иван
+					</h5>
+					<a>
+						2387 миль
+					</a>
+				</div>
+			</div>
 		</div>
 		<div>
 			<div class="menu-button">
@@ -22,6 +39,14 @@
 <script>
 
 export default {
+	props: {
+		text: {
+			type: String,
+			default() {
+				return "Якутск"
+			}
+		}
+	},
 	setup() {
 	}
 }

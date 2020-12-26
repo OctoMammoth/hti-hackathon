@@ -1,17 +1,18 @@
 <template>
-<div>
-	<navbar/>
+<div class="skeleton">
+	<navbar text="Якутск"/>
 
 	<div>
 		тут блок бонусной программы
 	</div>
+
 	<carousel>
 		<story :story="item" v-for="item in stories" :key="item.text"/>
 	</carousel>
 
 	<div class="ticket">
 		<v-button type="active">
-			билет: поиск и покупка
+			Поиск билетов
 		</v-button>
 		<v-button type="disabled">
 			Регистрация на рейс
@@ -21,6 +22,22 @@
 	<carousel>
 		<promo :promo="item" v-for="item in promos" :key="item.text"/>
 	</carousel>
+
+	<div class="activities">
+		<div class="top">
+			<v-button type="active">
+				Смотреть
+			</v-button>
+			<v-button type="active">
+				Аудио
+			</v-button>
+		</div>
+		<div class="bottom">
+			<v-button type="active">
+				Читать
+			</v-button>
+		</div>
+	</div>
 
 </div>
 </template>
@@ -39,13 +56,40 @@ export default {
 		const stories = reactive([
 			{
 				text: "Перевозка животных"
-			}
+			},
+			{
+				text: "Перевозка животных"
+			},
+			{
+				text: "Перевозка животных"
+			},
+			{
+				text: "Перевозка животных"
+			},
+			{
+				text: "Перевозка животных"
+			},
+			{
+				text: "Перевозка животных"
+			},
+			{
+				text: "Перевозка животных"
+			},
 		])
 
 		const promos = reactive([
 			{
-				text: "Двойные мили"
-			}
+				header: "Двойные мили",
+				text: "2 мили Yakutia за каждые 20 руб."
+			},
+			{
+				header: "Двойные мили",
+				text: "2 мили Yakutia за каждые 20 руб."
+			},
+			{
+				header: "Двойные мили",
+				text: "2 мили Yakutia за каждые 20 руб."
+			},
 		])
 
 		return {
@@ -62,3 +106,7 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss">
+@import "./index";
+</style>

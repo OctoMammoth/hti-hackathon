@@ -1,6 +1,5 @@
 <template>
 	<div class="carousel">
-		каруселька
 		<slot name="default"></slot>
 	</div>
 </template>

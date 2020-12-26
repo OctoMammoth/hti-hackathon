@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Main from '@/views/main'
 import SignIn from '@/views/signin'
 import Login from '@/views/login'
+import SearchTicket from '@/views/search-ticket'
 
 import NotFound from "@/views/notfound"
 
@@ -9,6 +10,10 @@ const routes = [
 	{
 		path: '/',
 		component: Main,
+	},
+	{
+		path: '/search-ticket',
+		component: SearchTicket,
 	},
 	{
 		path: '/signin',

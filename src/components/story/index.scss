@@ -1,5 +1,28 @@
 @import "@/assets/scss/variables";
 
 .story {
-	
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 3vw;
+    position: relative;
+    height: 27vw;
+
+    .story-image {
+        width: 17vw;
+        height: 17vw;
+        border-radius: 50%;
+        border: 1px solid $color_accent;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .story-text {
+        color: $color_black;
+        font-size: 0.7rem;
+        position: absolute;
+        bottom: 0;
+    }
 }
