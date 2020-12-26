@@ -1,0 +1,39 @@
+@import "@/assets/scss/variables";
+
+.plane {
+	position: relative;
+	height: 140vh;
+	overflow: hidden;
+	img {
+		width: 100vw;
+	}
+
+	.seats {
+		position: absolute;
+		top: 200px;
+		left: 5%;
+		right: 5%;
+		background: $color_white;
+		border-radius: 10px;
+
+		.row {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			font-size: 1.5rem;
+		}
+
+		.seat {
+			width: 16vw;
+			height: 20vw;
+			background: linear-gradient(#5CD6C0, #22C3A6);
+			border-radius: 10px;
+			margin: 10px;
+			
+			&.disabled {
+				background: #E9E8FC;
+			}
+		}
+
+	}
+}

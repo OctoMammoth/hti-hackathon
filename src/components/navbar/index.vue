@@ -29,7 +29,7 @@
 				Чат
 			</div>
 			<div class="menu-button">
-				Настройки
+				Наст
 			</div>
 		</div>
 	</div>
