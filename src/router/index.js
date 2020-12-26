@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Main from '@/views/main'
 import SignIn from '@/views/signin'
 import Login from '@/views/login'
+import Watch from '@/views/watch'
 import SearchTicket from '@/views/search-ticket'
 import ChooseSeat from '@/views/choose-seat'
 import CheckIn from '@/views/check-in'
@@ -24,6 +25,10 @@ const routes = [
 	{
 		path: '/check-in',
 		component: CheckIn,
+	},
+	{
+		path: '/watch',
+		component: Watch,
 	},
 	{
 		path: '/signin',
