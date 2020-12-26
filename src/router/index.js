@@ -4,6 +4,7 @@ import SignIn from '@/views/signin'
 import Login from '@/views/login'
 import SearchTicket from '@/views/search-ticket'
 import ChooseSeat from '@/views/choose-seat'
+import CheckIn from '@/views/check-in'
 
 import NotFound from "@/views/notfound"
 
@@ -19,6 +20,8 @@ const routes = [
 	{
 		path: '/choose-seat',
 		component: ChooseSeat,
+		path: '/check-in',
+		component: CheckIn,
 	},
 	{
 		path: '/signin',
