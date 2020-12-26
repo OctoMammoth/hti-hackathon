@@ -3,6 +3,7 @@ import Main from '@/views/main'
 import SignIn from '@/views/signin'
 import Login from '@/views/login'
 import SearchTicket from '@/views/search-ticket'
+import CheckIn from '@/views/check-in'
 
 import NotFound from "@/views/notfound"
 
@@ -14,6 +15,10 @@ const routes = [
 	{
 		path: '/search-ticket',
 		component: SearchTicket,
+	},
+	{
+		path: '/check-in',
+		component: CheckIn,
 	},
 	{
 		path: '/signin',

@@ -11,9 +11,11 @@
 	</carousel>
 
 	<div class="ticket">
-		<v-button type="active">
-			Поиск билетов
-		</v-button>
+		<router-link style="display:flex;text-decoration:none" to="/search-ticket">
+			<v-button style="flex:1" type="active">
+				Поиск билетов
+			</v-button>
+		</router-link>
 		<v-button type="disabled">
 			Регистрация на рейс
 		</v-button>

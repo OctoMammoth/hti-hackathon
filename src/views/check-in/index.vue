@@ -1,35 +1,17 @@
 <template>
 	<div class="search-ticket">
-		<navbar text="Ищу билет"/>
+		<navbar text="Регистрация на рейс"/>
 		<!-- другое событие, список https://ru.vuejs.org/v2/guide/events.html -->
 		<div class="text-field">
-			<input placeholder="Откуда"> 
+			<input placeholder="Фамилия"> 
 			<!-- v-model это как бы value -->
-			<input placeholder="Куда"> 
+			<input placeholder="№Брони/Билета"> 
 			<!-- реактивное значение placeholder -->
-			<datepicker 
-				:id-attr="form.datepickerSetting.id"
-				:name-attr="form.datepickerSetting.name"
-				:value-attr="form.datepickerSetting.value"
-				:placeholder-attr="form.datepickerSetting.placeholder"
-				:year-minus="form.datepickerSetting.yearMinus"
-				:from="form.datepickerSetting.fromDate"
-				:to="form.datepickerSetting.toDate"
-				class-attr="datepicker"
-				:disabled-date="form.datepickerSetting.disabledDate"
-				:locale="form.datepickerSetting.locale"
-				@value-changed="form.datepickerSetting.changeEvent"
-				:disableInput="form.datepickerSetting.disableInput"
-			></datepicker>
-			<switcher text="Односторонний полет"/>
-			<switcher text="С багажом"/>
 		</div>
 		<div class="flex">
-		<router-link style="display:flex;text-decoration:none" to="/check-in">
-			<v-button style="flex:1" type="active">
+			<v-button type="active">
 				Найти
 			</v-button>
-		</router-link>
 		</div>
 	</div>
 </template>
@@ -37,8 +19,6 @@
 <script>
 import navbar from "@/components/navbar"
 import VButton from "@/components/v-button"
-import datepicker from 'vue3-datepicker-lite'
-import switcher from '@/components/switcher'
 
 import { reactive } from "vue"
 
@@ -77,8 +57,6 @@ export default {
 	components: {
 		navbar,
 		VButton,
-		datepicker,
-		switcher,
 	}
 }
 </script>
