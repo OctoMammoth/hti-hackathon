@@ -1,20 +1,19 @@
 @import "@/assets/scss/variables";
 
 .media {
-	height: 25vh;
-	width: 27.5vw;
+	width: 37.5vw;
 	border-radius: 10px;
 	overflow: hidden;
 	flex-shrink: 0;
 	position: relative;
-	margin-right: 4vw;
-	margin-bottom: 4vw;
+	margin: 2vw;
 	
 	.media-image {
 		height: 85%;
 		img {
 			height: 100%;
 			width: 100%;
+			object-fit: cover;
 		}
 	}
 	
@@ -24,6 +23,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 		color: $color_black;
+		width: 100%;
 		z-index: 20;
 
 		h3, p {
@@ -36,7 +36,7 @@
 
 		p {
 			margin-top: 0.5vh;
-			font-size: 1.1rem;
+			font-size: .9rem;
 		}
 	}
 }

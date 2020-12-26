@@ -18,7 +18,7 @@ export default {
     setup() {
 		const medias = reactive([
 			{
-				text: "Жокер",
+				text: "Джокер (18+)",
 				source: "images/poster.jpg",
 				id: 0,
 			},
