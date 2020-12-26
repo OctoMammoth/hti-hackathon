@@ -25,15 +25,15 @@
 
 	<div class="activities">
 		<div class="top">
-			<v-button type="active">
+			<v-button type="active flex">
 				Смотреть
 			</v-button>
-			<v-button type="active">
+			<v-button type="active flex">
 				Аудио
 			</v-button>
 		</div>
 		<div class="bottom">
-			<v-button type="active">
+			<v-button type="active flex">
 				Читать
 			</v-button>
 		</div>
